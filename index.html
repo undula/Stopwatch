@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simple Stopwatch</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .time {
+        position: absolute;
+        width: 30vw;
+        height: 30vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 60px;
+        text-align: center;
+        font-family: monospace;
+        border-radius: 50%;
+        border: 4px solid darkslateblue;
+      }
+
+      .time div {
+        margin-top: 10vw;
+        color: #1c1c1b;
+      }
+
+      button {
+        background-color: darkslateblue;
+        font-weight: bold;
+        color: white;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        margin: 30px 50px;
+        border: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button class="main">START</button>
+    <button class="reset">RESET</button>
+    <div class="time">
+      <div>---</div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
